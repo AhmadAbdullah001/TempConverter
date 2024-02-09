@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            /* display: flex; */
+            /* justify-content: center; */
+           /* margin-top: 100px; */
+        }
+        .Container
+        {
+           margin-top: 150px;
+           margin-left: 200px;
+            border: solid #2D5356 2px;
+            border-radius: 20px;
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+        *
+        {
+            color: #2D5356;
+            font-family: 'Bacasime Antique', serif;
+        }
+        #P1
+        {
+          color: #2D5356;
+          text-align: center;
+          margin-top: 120px;
+          /* margin-left: 200px; */
+          font-family: 'Bacasime Antique', serif;
+        }
+        #From
+        {
+            color: #2D5356;
+          margin-top: 120px;
+          margin-left: 200px; 
+        }
+        #Input1
+        {
+            margin-top: 20px;
+            margin-left: 200px; 
+            font-size: 25px;
+            width: 317px;
+            /* text-align: center; */
+            /* align-items: center; */
+        }
+        #To
+        {
+            color: #2D5356;
+            margin-top: 120px;
+            margin-left: 200px; 
+        }
+        #Input2
+        {
+            margin-top: 20px;
+            margin-left: 200px; 
+            margin-left: 140px; 
+            font-size: 25px;
+        }
+        #Selector1
+        {
+            cursor: pointer;
+            font-size: 27px;
+            
+        }
+        #Selector2
+        {
+            width: 14.3em;
+            margin-left: 200px;
+            font-size: 27px;
+            cursor: pointer;
+        }
+        #CBtn
+        {
+            width: 150px;
+            height: 50px;
+            font-size: 30px;
+            font-family: initial;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-left: 300px;
+        }
+        .Section1
+        {
+            
+            width: 40vw;
+            padding-bottom: 50px;
+            padding-right: 20px;
+        }
+        
+        .Section2
+        {
+            background-color: #2D5356 ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40vw;
+}
+#Output
+{
+    color: white;
+    background-color: transparent;
+    border: none;
+    width: 250px;
+    height: 250px;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 200px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Media Query Starts Here */
+/* Phone starts here*/
+@media(max-width:1578px)
+{
+    #From
+    {
+        margin-left: 50px;
+    }
+    #Input1
+    {
+        margin-top: 0px;
+        margin-left: 80px; 
+        width: 317px;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
+    #To
+    {
+        margin-left: 50px;
+    }
+    #Selector2
+        {
+            margin-top: 0px;
+            margin-left: 80px; 
+            width: 350px;
+            /* text-align: center; */
+            /* align-items: center; */
+        }
+        #CBtn
+        {
+           margin-left: 200px; 
+        }
+}
+@media(max-width:1147px)
+{
+    #From
+    {
+        margin-left: 10px;
+    }
+    #Input1
+    {
+        margin-top: 0px;
+        margin-left: 20px; 
+        width: 257px;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
+    #To
+    {
+        margin-left: 10px;
+    }
+    #Selector2
+        {
+            margin-top: 0px;
+            margin-left: 20px; 
+            width: 320px;
+            /* text-align: center; */
+            /* align-items: center; */
+        }
+        #CBtn
+        {
+           margin-left: 100px; 
+        }
+}
+@media(max-width:847px)
+{
+    #From
+    {
+        margin-left: 10px;
+    }
+    #Input1
+    {
+        margin-top: 0px;
+        margin-left: 20px; 
+        width: 157px;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
+    #To
+    {
+        margin-left: 10px;
+    }
+    #Selector2
+        {
+            margin-top: 0px;
+            margin-left: 20px; 
+            width: 220px;
+            /* text-align: center; */
+            /* align-items: center; */
+        }
+        #CBtn
+        {
+           margin-left: 50px; 
+        }
+}
+@media (max-width:616px)
+{
+    #Output
+    {
+        width: 150px;
+    height: 150px;
+    font-size: 40px; 
+    }
+    #P1
+    {
+        font-size: 40px;
+    }
+}
+@media(max-width:598px)
+{
+    #From
+    {
+        margin-left: 5px;
+    }
+    #Input1
+    {
+        margin-top: 0px;
+        margin-left: 20px; 
+        width: 107px;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
+    #To
+    {
+        margin-left: 5px;
+    }
+    #Selector2
+        {
+            margin-top: 0px;
+            margin-left: 20px; 
+            width: 175px;
+            /* text-align: center; */
+            /* align-items: center; */
+        }
+        #CBtn
+        {
+           margin-left: 30px; 
+        }
+}
+@media(max-width:472px)
+{
+    #Output
+    {
+        width: 100px;
+    height: 100px;
+    font-size: 40px; 
+    }
+    #From
+    {
+        margin-left: 5px;
+    }
+    #Input1
+    {
+        margin-top: 0px;
+        margin-left: 20px; 
+        width: 67px;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
+    #To
+    {
+        margin-left: 5px;
+    }
+    #Selector2
+        {
+            margin-top: 0px;
+            margin-left: 20px; 
+            width: 135px;
+            /* text-align: center; */
+            /* align-items: center; */
+        }
+        #CBtn
+        {
+           margin-left: 30px; 
+           width: 100px;
+           font-size: 25px;
+        }
+        #P1
+        {
+            font-size: 30px;
+        }
+}
+@media(max-width:372px)
+{
+    #Output
+    {
+        width: 100px;
+    height: 100px;
+    font-size: 40px; 
+    }
+    #From
+    {
+        margin-left: 5px;
+    }
+    #Input1
+    {
+        margin-top: 0px;
+        margin-left: 5px; 
+        width: 67px;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
+    #To
+    {
+        margin-left: 5px;
+    }
+    #Selector2
+        {
+            margin-top: 0px;
+            margin-left: 5px; 
+            width: 135px;
+            /* text-align: center; */
+            /* align-items: center; */
+        }
+        #CBtn
+        {
+           margin-left: 30px; 
+           width: 100px;
+           font-size: 25px;
+        }
+        #P1
+        {
+            font-size: 25px;
+        }
+        #H
+        {
+         display: flex;
+         justify-content: center;
+         width: 100vw;
+         border: sandybrown solid 2px;
+        }
+}
+/* Phone Ends Here */
+</style>
+</head>
+<body>
+    <div class="Container">
+        <div class="Section1">
+            <h1 id="P1">Enter Temperature</h1>
+            <h2 id="From">Degree :</h2>
+            <input type="number" id="Input1" placeholder="" >
+            <select  id="Selector1">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+                <option value="K">K</option>
+            </select>
+            <h2 id="To">Convert in :</h2>
+            <select  id="Selector2">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+                <option value="K">K</option>
+            </select>
+            <br><br><br><br><br>
+            <button id="CBtn" onclick="Convert()" >Convert</button >
+        </div>
+        <div class="Section2">
+            <p id="Output">__​​</p>
+        </div>
+    </div>
+</body>
+<script>
+    let input=document.getElementById("Input1")
+    let S1=document.getElementById("Selector1");
+    let S2=document.getElementById("Selector2");
+    let output=document.getElementById("Output")
+    function Convert()
+    {
+        if(S1.value=='C' && S2.value=='F')
+        {
+         (output.innerHTML)=(((input.value)*9/5)+32).toFixed(2)+"°F";
+        }
+        else if(S1.value=='C' && S2.value=='K')
+        {
+         (output.innerHTML)=((input.value)+273.15).toFixed(2)+"K";
+        }
+        else if(S1.value=='F' && S2.value=='C')
+        {
+         (output.innerHTML)=((input.value-32)*(5/9)).toFixed(2)+"°C";
+        }
+        else if(S1.value=='F' && S2.value=='K')
+        {
+         (output.innerHTML)=((input.value-32)*5/9+273.15).toFixed(2)+"K";
+        }
+        else if(S1.value=='K' && S2.value=='C')
+        {
+         (output.innerHTML)=(input.value-273.15).toFixed(2)+"°C";
+        }
+        else if(S1.value=='K' && S2.value=='F')
+        {
+         (output.innerHTML)=((input.value-273.15)*9/5+32).toFixed(2)+"°F";
+        }
+    }
+</script>
+</html>
